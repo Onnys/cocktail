@@ -10,9 +10,26 @@ class Coktail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(),
+      theme: ThemeData(primaryColor: Colors.grey[100],accentColor: Colors.grey[800]),
       title: 'Coktail',
       home: Home(),
+    );
+  }
+}
+class Navegation extends StatefulWidget {
+  @override
+  _NavegationState createState() => _NavegationState();
+}
+
+class _NavegationState extends State<Navegation> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: BottomNavigationBar(
+
+        currentIndex: 1,
+        type: BottomNavigationBarType.fixed,
+        items:[ BottomNavigationBarItem( icon: Icon(Icons.home)),BottomNavigationBarItem(icon: Icon(Icons.home))]),
     );
   }
 }

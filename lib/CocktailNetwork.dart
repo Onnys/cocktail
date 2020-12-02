@@ -22,6 +22,19 @@ class CocktailNetwork {
     return compute(parseCocktail,response.body);
     
   }
+  Future<String> fetchCocktailDetails(http.Client client, {int id}) async {
+    http.Response response;
+    try {
+      response = await client.get(
+          "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=$id");
+      
+    } catch (e) {
+      print(e);
+    }
+    return response.body;
+
+  }
+
   
 }
 
