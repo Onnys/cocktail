@@ -23,11 +23,11 @@ class _CocktailTileState extends State<CocktailTile> {
     return GestureDetector(
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+         
           return CocktailDetails(
             id: widget.cocktails[widget.index].idDrink,
-            image: widget.cocktails[widget.index].strDrinkThumb,
             title: widget.cocktails[widget.index].strDrink,
-
+            image: widget.cocktails[widget.index].strDrinkThumb,
           );
         }));
       },
@@ -43,7 +43,7 @@ class _CocktailTileState extends State<CocktailTile> {
                 width: MediaQuery.of(context).size.width / 2,
                 height: 450,
                 child: Image.network(
-                  widget.cocktails[widget.index].strDrinkThumb,
+                  widget.cocktails[widget.index].strDrinkThumb ?? 'https://i2.wp.com/www.silocreativo.com/en/wp-content/uploads/2017/11/ejemplo-pagina-error-404-creativo.png?fit=666%2C370&quality=100&strip=all&ssl=1',
                   fit: BoxFit.fill,
                 ),
               ),
