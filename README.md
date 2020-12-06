@@ -1,6 +1,6 @@
 # cocktail
 
-A new Flutter project.
+A aplication that shows a list of cocktail that can be alcholic and non alcholic 
 
 ## Getting Started
 
