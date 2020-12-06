@@ -1,4 +1,4 @@
-import 'package:cocktail/Cocktail.dart';
+import 'package:cocktail/services/Cocktail.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
@@ -21,7 +21,7 @@ class CocktailNetwork {
     if (response.statusCode == 200) {
       return compute(parseCocktail, response.body);
     } else {
-      throw Exception('Failed to load album');
+      throw Exception('Failed to load cocktail');
     }
   }
 
@@ -39,7 +39,7 @@ class CocktailNetwork {
     if (response.statusCode == 200) {
       return cocktailDetails;
     } else {
-      throw Exception('Failed to load album');
+      throw Exception('Failed to load cocktail by id');
     }
   }
 }
