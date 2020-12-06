@@ -1,5 +1,5 @@
-import 'package:cocktail/Cocktail.dart';
-import 'package:cocktail/CocktailDetails.dart';
+import 'package:cocktail/services/Cocktail.dart';
+import 'package:cocktail/screens/CocktailDetails.dart';
 import 'package:flutter/material.dart';
 
 class CocktailTile extends StatefulWidget {
