@@ -1,3 +1,4 @@
+import 'package:cocktail/screens/CocktailDetails.dart';
 import 'package:cocktail/screens/home.dart';
 import 'package:cocktail/utilities/constants.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +12,10 @@ class Coktail extends StatelessWidget {
     return MaterialApp(
       theme: apptheme,
       title: 'Coktail',
-      home: Home(),
+      initialRoute: Home.id,
+      routes: {
+        Home.id : (context) => Home(), 
+      },
     );
   }
 }

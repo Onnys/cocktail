@@ -1,6 +1,7 @@
 # cocktail
 
 A aplication that shows a list of cocktail that can be alcoholic and nonalcoholic fetched from thecocktaildb API
+![](video.gif)
 ## Getting Started
 
 This project is a starting point for a Flutter application.

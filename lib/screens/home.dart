@@ -6,11 +6,13 @@ import 'package:http/http.dart' as http;
 
 
 class Home extends StatefulWidget {
+  static const String id = 'Home';
   @override
   _HomeState createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
+ 
   CocktailNetwork cock = CocktailNetwork();
 
   @override

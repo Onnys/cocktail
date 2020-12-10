@@ -34,9 +34,10 @@ class CocktailNetwork {
     } catch (e) {
       print(e);
     }
-    var cocktailDetails =
-        (convert.jsonDecode(response.body)['drinks'] as List)[0];
+    
     if (response.statusCode == 200) {
+      var cocktailDetails =
+        (convert.jsonDecode(response.body)['drinks'] as List)[0];
       return cocktailDetails;
     } else {
       throw Exception('Failed to load cocktail by id');
